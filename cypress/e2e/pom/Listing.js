@@ -22,4 +22,34 @@ export class Listing {
   clickSecondPageButton() {
     this.getSecondPageButton().click();
   }
+
+  selectSecondProduct() {
+    this.getProductPagination().scrollIntoView({ duration: 2000, easing: 'swing', offset: { top: -300, left: 0 } });
+    this.clickSecondPageButton();
+
+    this.getProductIndex().then((productIndex) => {
+      this.getSearchResultsList().eq(productIndex).click();
+    });
+
+    cy.origin('https://www.mercadolibre.com.mx', () => {
+      cy.url().should('contain', 'MLM');
+      cy.contains('Agregar al carrito').should('exist');
+    });
+  }
+
+  getProductIndex() {
+    let freeShippingIndexes = [];
+
+    return this.getSearchResultsList().each(($el, index) => {
+      if ($el.text().includes('gratis')) {
+        freeShippingIndexes.push(index);
+      }
+    }).then(() => {
+      if (freeShippingIndexes.length >= 2) { // If there are at least two products with free shipping
+        return freeShippingIndexes[1]; // The index of the second product with free shipping is returned
+      } else { // If there are no more than two products with free shipping, we return the index of the second product in the list
+        return 1;
+      }
+    });
+  }
 }

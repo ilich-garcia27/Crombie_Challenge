@@ -11,4 +11,9 @@ describe('Crombie Automation Challenge', () => {
     home.visit();
     home.searchProduct('Samsung S25');
   });
+
+  it('goes to the second page and selects the second free-shipping product', () => {
+    listing.visit();
+    listing.selectSecondProduct();
+  });
 })
