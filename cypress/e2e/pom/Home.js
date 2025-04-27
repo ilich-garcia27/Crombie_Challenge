@@ -18,4 +18,13 @@ export class Home {
   clickSearchButton() {
     this.getSearchButton().click();
   }
+
+  searchProduct(product) {
+    this.setSearchInputValue(product);
+    this.clickSearchButton();
+
+    cy.origin('https://listado.mercadolibre.com.mx/', () => {
+      cy.url().should('include', 'listado'); // Verify that the URL contains 'listado'
+    });
+  }
 }

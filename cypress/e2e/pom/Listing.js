@@ -1,21 +1,25 @@
 export class Listing {
-    visit() {
-        cy.visit('https://listado.mercadolibre.com.mx/samsung-s25#D[A:Samsung%20S25]');
-    }
+  visit() {
+    cy.visit('https://listado.mercadolibre.com.mx/hisopos?sb=all_mercadolibre#D[A:hisopos]');
+  }
 
-    getProductPagination() {
-        return cy.get('.andes-pagination');
-    }
+  // Getters for the elements on the listing page
 
-    getSecondPageButton() {
-        return cy.get('.andes-pagination__button--next');
-    }
+  getProductPagination() {
+    return cy.get('.andes-pagination');
+  }
 
-    clickProductPagination() {
-        this.getProductPagination().click();
-    }
+  getSecondPageButton() {
+    return cy.get('.andes-pagination__button--next');
+  }
 
-    clickSecondPageButton() {
-        this.getSecondPageButton().click();
-    }
+  getSearchResultsList() {
+    return cy.get('.ui-search-result__wrapper');
+  }
+
+  // Function to interact with the elements
+
+  clickSecondPageButton() {
+    this.getSecondPageButton().click();
+  }
 }
