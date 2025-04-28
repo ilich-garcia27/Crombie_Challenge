@@ -1,6 +1,6 @@
 export class Product {
   visit() {
-    cy.visit('https://articulo.mercadolibre.com.mx/MLM-2257135563-samsung-galaxy-s25-ultra-1tb-12ram-titanium-gray-nacional-sm-s938b-_JM?searchVariation=187196087579#polycard_client=search-nordic&searchVariation=187196087579&position=13&search_layout=stack&type=item&tracking_id=2c86e8b5-c8dd-4d26-ae11-63b5bd4dae95');
+    cy.visit('https://articulo.mercadolibre.com.mx/MLM-2248190999-samsung-galaxy-s25-blue-black-12gb-256gb-_JM?searchVariation=183025509378#is_advertising=true&searchVariation=183025509378&backend_model=search-backend&position=2&search_layout=stack&type=pad&tracking_id=8dc8505d-b297-4e3c-b349-c25e58f44894&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=2&ad_click_id=ZjdhNGEwZDItNGQzYS00N2Q4LWFiNTQtMGU1ZDMzMGEwODQ5');
   }
 
   // Getters for the elements on the product page

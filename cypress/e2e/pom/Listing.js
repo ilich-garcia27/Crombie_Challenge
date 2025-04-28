@@ -1,6 +1,6 @@
 export class Listing {
   visit() {
-    cy.visit('https://listado.mercadolibre.com.mx/hisopos?sb=all_mercadolibre#D[A:hisopos]');
+    cy.visit('https://listado.mercadolibre.com.mx/samsung-s25#D[A:samsung%20s25]');
   }
 
   // Getters for the elements on the listing page
@@ -31,9 +31,9 @@ export class Listing {
       this.getSearchResultsList().eq(productIndex).click();
     });
 
-    cy.origin('https://www.mercadolibre.com.mx', () => {
-      cy.url().should('contain', 'MLM');
-      cy.contains('Agregar al carrito').should('exist');
+    cy.origin('https://articulo.mercadolibre.com.mx', () => {
+      cy.url().should('contain', 'MLM'); // Verify that the URL contains 'MLM' to ensure we are on a product page
+      cy.contains('Agregar al carrito').should('exist'); // Verify that the "Agregar al carrito" button exists
     });
   }
 
