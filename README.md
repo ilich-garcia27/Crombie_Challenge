@@ -1,5 +1,3 @@
-# Crombie_Challenge
-
 # 🛒 Proyecto de Automatización - Mercado Libre (Cypress)
 
 Este proyecto contiene pruebas automatizadas de la plataforma Mercado Libre, utilizando el framework Cypress y aplicando el patrón Page Object Model (POM).
@@ -36,6 +34,8 @@ Este proyecto contiene pruebas automatizadas de la plataforma Mercado Libre, uti
    ```bash
    npx cypress open
 
+---
+
 ## 🧪 Ejecución de pruebas
 - Para abrir el Test Runner:
   ```bash
@@ -43,6 +43,8 @@ Este proyecto contiene pruebas automatizadas de la plataforma Mercado Libre, uti
 - Para ejecutar las pruebas en modo headless:
   ```bash
    npx cypress run
+
+---
 
 ## 📋 Escenarios cubiertos
 - ✅ Buscar un producto específico.
