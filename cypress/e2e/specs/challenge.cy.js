@@ -16,4 +16,10 @@ describe('Crombie Automation Challenge', () => {
     listing.visit();
     listing.selectSecondProduct();
   });
+
+  it('selects 3 units and add them to the cart', () => {
+    product.visit();
+    product.selectThreeUnits();
+    product.addToCart();
+  });
 })

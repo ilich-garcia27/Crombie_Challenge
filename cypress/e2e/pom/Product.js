@@ -34,4 +34,26 @@ export class Product {
   clickAddToCartButton() {
     return this.getAddToCartButton().click();
   }
+
+  // Function to scroll to the quantity list and select 3 units
+
+  selectThreeUnits() {
+    this.getQuantityList().scrollIntoView({ duration: 1000, easing: 'swing' });
+    this.clickQuantityList();
+    this.clickThreeUnits();
+  }
+
+  // Function to scroll to the "Agregar al carrito" button and click it
+
+  addToCart() {
+    this.getAddToCartButton().scrollIntoView({ duration: 1000, easing: 'swing' });
+    this.clickAddToCartButton();
+
+    cy.origin('https://www.mercadolibre.com', () => {
+      cy.url().should('include', 'login');
+      cy.contains('¡Hola! Para agregar al carrito, ingresa a tu cuenta').should('exist'); // Verify that the login disclaimer shows
+      cy.get('[data-testid="login-link"]').should('exist'); // Verify that the "Crear cuenta" button exists
+      cy.get('[id=":R579:"]').should('exist'); // Verify that the "Ingresar" button exists
+    });
+  }
 }
