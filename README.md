@@ -28,7 +28,7 @@ Este proyecto contiene pruebas automatizadas de la plataforma Mercado Libre, uti
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/mercado-libre-cypress.git
+   git clone https://github.com/ilich-garcia27/Crombie_Challenge.git
 2. Instalar dependencias:
    ```bash
    npm install
