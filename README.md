@@ -1,55 +1,46 @@
-# 🛒 Proyecto de Automatización - Mercado Libre (Cypress)
+# 🛒 Automation Project - Mercado Libre (Cypress)
 
-Este proyecto contiene pruebas automatizadas de la plataforma Mercado Libre, utilizando el framework Cypress y aplicando el patrón Page Object Model (POM).
-
----
-
-## 📚 Índice
-
-- [Tecnologías utilizadas](#tecnologías-utilizadas)
-- [Instalación](#instalación)
-- [Ejecución de pruebas](#ejecución-de-pruebas)
-- [Escenarios cubiertos](#escenarios-cubiertos)
+This project contains automated tests for the Mercado Libre platform, using the Cypress framework and applying the Page Object Model (POM) pattern.
 
 ---
 
-## 🚀 Tecnologías utilizadas
+## 🚀 Technologies Used
 
-- [Cypress](https://www.cypress.io/) - Framework de automatización de pruebas end-to-end
+- [Cypress](https://www.cypress.io/) - End-to-end testing framework
 - JavaScript (ES6+)
-- Page Object Model (POM) como patrón de diseño
-- Node.js y npm (para administración de paquetes)
+- Page Object Model (POM) as design pattern
+- Node.js and npm (for package management)
 
 ---
 
-## 🛠️ Instalación
+## 🛠️ Installation
 
-1. Clonar el repositorio:
+1. Clone the repository:
    ```bash
    git clone https://github.com/ilich-garcia27/Crombie_Challenge.git
-2. Instalar dependencias:
+2. Install dependencies:
    ```bash
    npm install
-4. Abrir Cypress:
+4. Open Cypress:
    ```bash
    npx cypress open
 
 ---
 
-## 🧪 Ejecución de pruebas
-- Para abrir el Test Runner:
+## 🧪 Test Execution
+- To open the Test Runner:
   ```bash
    npx cypress open
-- Para ejecutar las pruebas en modo headless:
+- To run the tests in headless mode:
   ```bash
    npx cypress run
 
 ---
 
-## 📋 Escenarios cubiertos
-- ✅ Buscar un producto específico.
-- ✅ Navegar a la segunda página de resultados.
-- ✅ Seleccionar el segundo producto con "Envío gratis" (o segundo producto disponible).
-- ✅ Cambiar la cantidad del producto a 3 unidades.
-- ✅ Agregar el producto al carrito.
-- ✅ Validar la aparición de la pantalla de login si es necesario.
+## 📋 Covered Scenarios
+- ✅ Search for a specific product.
+- ✅ Navigate to the second page of results.
+- ✅ Select the second product with "Free shipping" (or the second available product).
+- ✅ Change the quantity of the product to 3 units.
+- ✅ Add the product to the cart.
+- ✅ Validate the appearance of the login screen if necessary.
