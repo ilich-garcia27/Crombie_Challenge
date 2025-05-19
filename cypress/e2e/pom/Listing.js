@@ -1,6 +1,6 @@
 export class Listing {
   visit() {
-    cy.visit('https://listado.mercadolibre.com.mx/samsung-s25#D[A:samsung%20s25]');
+    cy.visit('https://listado.mercadolibre.com.mx/hdd?sb=all_mercadolibre#D[A:hdd]');
   }
 
   // Getters for the elements on the listing page

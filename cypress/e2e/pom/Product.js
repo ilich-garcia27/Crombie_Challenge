@@ -1,6 +1,6 @@
 export class Product {
   visit() {
-    cy.visit('https://articulo.mercadolibre.com.mx/MLM-2248190999-samsung-galaxy-s25-blue-black-12gb-256gb-_JM?searchVariation=183025509378#is_advertising=true&searchVariation=183025509378&backend_model=search-backend&position=2&search_layout=stack&type=pad&tracking_id=8dc8505d-b297-4e3c-b349-c25e58f44894&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=2&ad_click_id=ZjdhNGEwZDItNGQzYS00N2Q4LWFiNTQtMGU1ZDMzMGEwODQ5');
+    cy.visit('https://articulo.mercadolibre.com.mx/MLM-3354371402-disco-solido-ssd-interno-orico-1tb-sata-25-for-laptop-pc-_JM?searchVariation=181596440828#is_advertising=true&searchVariation=181596440828&backend_model=search-backend&position=2&search_layout=stack&type=pad&tracking_id=0cfe1be9-cf68-44ff-b1aa-642387a8be00&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=2&ad_click_id=M2I2MjcwOGUtZGU4OC00N2MzLTgzOGQtNmE5ZjVhZTZmNWE3');
   }
 
   // Getters for the elements on the product page
@@ -14,7 +14,7 @@ export class Product {
   }
 
   getAddToCartButton() {
-    return cy.get('[id=":R9j9s5lpjm:"]');
+    return cy.get('[id=":R9ja05lpjm:"]');
   }
 
   getThreeUnits() {

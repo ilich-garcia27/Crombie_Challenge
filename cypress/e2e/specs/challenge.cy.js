@@ -9,7 +9,7 @@ const product = new Product();
 describe('Crombie Automation Challenge', () => {
   it('searches for a product', () => {
     home.visit();
-    home.searchProduct('Samsung S25');
+    home.searchProduct('hdd');
   });
 
   it('goes to the second page and selects the second free-shipping product', () => {
@@ -17,7 +17,7 @@ describe('Crombie Automation Challenge', () => {
     listing.selectSecondProduct();
   });
 
-  it('selects 3 units and add them to the cart', () => {
+  it('selects 3 units and adds them to the cart', () => {
     product.visit();
     product.selectThreeUnits();
     product.addToCart();
